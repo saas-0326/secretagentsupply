@@ -1,0 +1,165 @@
+/* Root Styles */
+
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: White;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+/* Header Section Styles */
+
+.logo {
+  background-color: Black;
+}
+
+.logo .container {
+  padding: 0.66rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+}
+
+.logo span {
+  padding-left: 1rem;
+}
+
+.banner {
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 16rem;
+  padding-top: 9rem;
+}
+
+.arrival {
+  background-color: Black;
+  width: 20rem;
+  padding: 2rem 3rem;
+  font-weight: bold;
+}
+
+.arrival h2 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+}
+
+
+/* Navigation Styles */
+
+nav {
+  background-color: FireBrick;
+  padding: 0.75rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav span {
+  text-align: center;
+  display: none;
+}
+
+
+/* Products Styles */
+
+.products, .contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-image {
+  border: 4px solid Black;
+  height: 9rem;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product img {
+  max-width: 50%;
+}
+
+.product span {
+  background-color: Black;
+  padding: 0.5rem;
+  display: block;
+  text-align: center;
+}
+
+
+/* Contact Information Styles */
+
+.contact {
+  width: 35%;
+}
+
+.contact h4 {
+  background-color: Black;
+  padding: 1rem 2rem;
+}
+
+.contact span {
+  color: Black;
+}
+
+
+/* Footer Section Styles */
+
+footer {
+  background-color: Black;
+  padding: 2.5rem 0;
+  margin-top: 4rem;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+  nav span {
+    display: inherit;
+  }
+  .product {
+    width: 47%;
+  }
+  .product.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .products, .contact-info {
+    align-items: center;
+    flex-direction: column;
+  }
+  .product, .contact {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+  .product.watch {
+    display: none;
+  }
+  footer {
+    text-align: center;
+  }
+}
