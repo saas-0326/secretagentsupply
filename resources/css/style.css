@@ -148,6 +148,20 @@ footer {
 }
 
 @media only screen and (max-width: 470px) {
+  .banner {
+    height: 5rem;
+    padding-top: 10rem;
+  }
+  .arrival {
+    width: auto;
+    padding: 1rem 2rem;
+  }
+  .arrival span {
+    font-size: 0.77rem;
+  }
+  .arrival h2 {
+    font-size: 1rem;
+  }
   .products, .contact-info {
     align-items: center;
     flex-direction: column;
